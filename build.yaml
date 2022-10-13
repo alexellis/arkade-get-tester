@@ -1,0 +1,11 @@
+name: build
+
+on: push
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: alexellis/setup-arkade@v1
+    - name: check PATH
+      run: echo $PATH
