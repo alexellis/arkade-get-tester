@@ -14,4 +14,12 @@ jobs:
     steps:
     - uses: alexellis/setup-arkade@master
     - name: check PATH
-      run: echo $PATH
+      run: |
+
+        which kubectl
+
+        arkade get kubectl
+
+        echo $PATH
+
+        which kubectl
