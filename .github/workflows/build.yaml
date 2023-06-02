@@ -16,5 +16,7 @@ jobs:
       with:
 #        print-summaries: false
         faas-cli: latest
+        k3sup: latest
     - run: |
         faas-cli version
+        k3sup version
