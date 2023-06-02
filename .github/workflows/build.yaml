@@ -17,6 +17,9 @@ jobs:
 #        print-summaries: false
         faas-cli: latest
         k3sup: latest
+        kubectl: latest
+        k9s: latest
+        k3s: latest
     - run: |
         faas-cli version
         k3sup version
