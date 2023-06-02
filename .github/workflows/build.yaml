@@ -12,14 +12,8 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-    - uses: alexellis/setup-arkade@master
-    - name: check PATH
-      run: |
-
-        which kubectl
-
-        arkade get kubectl
-
-        echo $PATH
-
-        which kubectl
+    - uses: alexellis/get-arkade@setup
+      with:
+        faas-cli: latest
+    - run: |
+        faas-cli version
